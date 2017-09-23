@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<font color="white">
+	<head>
+		<title>Gamdom.trade :: Trade</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body background="img/background.png">
+	
+		<nav class="navbar"><h1>
+		<div class="nav">
+			<div class="floatleft">
+				<a href="/"><img src="img/logo.png" height="40"></a>
+            </div>
+            <div class="floatright">{{#if user}}
+				<div class="balancediv">
+					<span class="balance">
+						<span class="icon-balancecoin">
+							<img src="img/balance.png">{{#if user.credits}} {{user.credits}}{{else}} 0{{/if}}
+						</span>
+					</span>
+				</div>
+				<div class="user">
+					{{user.personaname}}
+				</div>
+				<div class="logout">
+					<a href="/logout">Logout</a>
+				</div>
+				{{else}}
+				<div class="login">
+					<a href="/auth/steam"><img src="img/steam_login.png"></a>
+				</div>
+				{{/if}}
+            </div>
+		</div>
+		</nav></h1>
+		
+		<div>
+			<br /><br /><br />
+			{{#if user}}
+			<a href="/deposit">Deposit</a>
+			<br />
+			<a href="/withdraw">Withdraw</a>
+			{{else}}
+			<div class="logo_off">
+				<h3 class="welcome">Welcome!<br> Sign in and start trading!</h3><br><br>
+				<a href="/auth/steam"><img src="img/logo.png" height="100"></a><br>
+				<a href="/auth/steam"><img src="img/steam_login.png"></a>
+			</div>
+			{{/if}}
+		</div>
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/main.js"></script>
+	</font>
+</html>

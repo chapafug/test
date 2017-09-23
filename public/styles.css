@@ -1,0 +1,95 @@
+.floatleft {
+    float:left;
+	margin-top: 5px;
+}
+.floatright {
+    float:right;
+	font-size: 15px;
+	margin-top: 5px;
+}
+.icon-balancecoin{
+	font-size: 110%;
+	margin-bottom: 0.6ex;
+	display: inline-block;
+	margin-right: 0.3ex;
+	vertical-align: middle;
+	display: inline-block;
+}
+.balancediv{
+	padding-left: 12px;
+	padding-right: 12px;
+	height: 42px;
+	border: 2px solid #b5babb;
+	border-radius: 1px;
+	display: inline-block;
+}
+.balance{
+	font-size: 14px;
+	font-weight: 600;
+	font-family: Lato;
+	line-height: 40px;
+	background-size: 21px;
+	display: inline-block;
+}
+.navbar{
+	margin-top: -8px;
+	margin-bottom: 0;
+	max-height: 55px;
+	border-top: 4px solid #08974f;
+	z-index: 999;
+	background: #101014;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.user{
+	padding-left: 5px;
+	padding-right: 45px;
+	display: inline-block;
+}
+.logout{
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+}
+.deposit{
+	width: max-content;
+	display: inline-block;
+}
+.login{
+	padding-left: 20px;
+	padding-right: 20px;
+	display: inline-block;
+}
+.nav{
+	height: 60px;
+}
+.logo_off{
+	position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -9em;
+    margin-left: -15em;
+	text-align: center;
+}
+.deposit_title{
+	text-align: left;
+	margin-left: 30px;
+}
+
+@font-face { font-family: Lato; src: url('Lato-Regular-b.woff'); }
+
+h3 {
+	display:inline;
+	font-family: Lato;
+}
+h1 {
+	display:inline;
+	font-family: Lato;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+span{
+	display: inline-block;
+}
